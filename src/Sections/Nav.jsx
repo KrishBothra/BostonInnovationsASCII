@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Assets/LifeSciences.png";
+import logo from "./Assets/bostonInnovations.jpeg";
 function Nav() {
   return (
     <nav class=" bg-white fixed w-full z-20 top-0 left-0">
@@ -7,7 +7,7 @@ function Nav() {
         <a href="/" class="flex items-center">
           <img src={logo} class="h-12 mr-3" alt="Flowbite Logo"></img>
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">
-            LifeSciences
+            Boston Innovations
           </span>
           <div className="border-r-2 border-black text-white">xx</div>
         </a>
