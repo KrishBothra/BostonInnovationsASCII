@@ -43,7 +43,7 @@ function Contact() {
           Leave a Message
         </h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          You can also contact us at info@bostoninnovations.org
         </p>
       </div>
 
