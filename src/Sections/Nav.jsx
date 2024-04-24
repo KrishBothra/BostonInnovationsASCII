@@ -59,20 +59,20 @@ function Nav() {
             </li>
             <li>
               <a
-                href="services"
+                href="Projects"
                 class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 "
               >
-                Services
+                Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="news"
                 class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 "
               >
                 News
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="testimonials"
