@@ -7,6 +7,7 @@ function Contact() {
 
  
   function sendEmail(event) {
+    console.log("heyyyyy")
     event.preventDefault(); 
     
     const templateParams = {
@@ -17,15 +18,14 @@ function Contact() {
       user_number: event.target.elements['phone-number'].value,
       message: event.target.elements['message'].value
     };
-
     
-
-    emailjs.send('service_67q66ea', 'template_woegzln', templateParams, '0inXRPYA-iJOjIgbH')
+    emailjs.send('service_uhaz7kl', 'template_91mauzt', templateParams, 'qO-2cdDv92CnS36bk')
       .then((result) => {
-          console.log(result.text);
+        console.log('Email sent successfully:', result.text);
       }, (error) => {
-          console.log(error.text);
+        console.error('Email sending failed:', error.text);
       });
+    
 
     event.target.reset();
   }
