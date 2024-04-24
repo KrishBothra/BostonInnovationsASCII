@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Assets/bostonInnovations.jpeg";
+import logo from "./Assets/bostonInnovations.png";
 function Nav() {
   return (
     <nav class=" bg-white fixed w-full z-20 top-0 left-0">
