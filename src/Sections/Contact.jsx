@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Assets/LifeSciences.png";
+import logo from "./Assets/bostonInnovations.png";
 import stock1 from "./Assets/stock1.jpg";
 import emailjs from '@emailjs/browser';
 
@@ -220,7 +220,7 @@ function Contact() {
           <div class="relative w-full h-[40rem] ">
             <iframe
               class="absolute top-0 left-0 w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.319850684185!2d-88.06452702382882!3d42.03632117122472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faf11a4896419%3A0x3614b144444a16fc!2sJames%20B.%20Conant%20High%20School!5e0!3m2!1sen!2sus!4v1692069162386!5m2!1sen!2sus, 10.606619&z=15&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d377398.748137344!2d-71.0574629!3d42.3547231!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89e37083b4b154a5%3A0x69181c5d89fadcf2!2s251%20Devonshire%20St%20Boston%2C%20MA%2002110!3m2!1d42.3547231!2d-71.05746289999999!5e0!3m2!1sen!2sus!4v1714071895426!5m2!1sen!2sus, 10.606619&z=15&output=embed"
               frameborder="0"
               allowfullscreen=""
               aria-hidden="false"
@@ -228,7 +228,7 @@ function Contact() {
             ></iframe>
           </div>
         </div>
-        <div className="bg-blue-800 flex-1 text-center ">
+        <div className="bg-cyan-800 flex-1 text-center ">
           <div className="w-[200px] h-[200px] bg-white mx-auto mt-16 rounded-full justify-center flex">
             <img
               class="w-[160px] h-[160px] mx-auto my-auto"
@@ -242,11 +242,11 @@ function Contact() {
             className="text-white text-lg text-white hover:text-[#72b08e]"
             target="_blank"
           >
-            123 Street Lane. Schaumburg IL
+            251 Devonshire St, Boston, MA 
           </a>
           <p className="text-white text-lg mt-16">Contact us at</p>
           <p className="text-white text-lg mt-2">
-            xxx-xxx-xxxx | example@gmail.com
+            info@bostoninnovations.org
           </p>
 
           <div className=" flex flex-row justify-center mt-4">
@@ -307,7 +307,7 @@ function Contact() {
           </div>
 
           <p className="text-white font-[300] text-base mt-16">
-            © 2023 LifeSciences
+            © 2024 Boston Innovations
           </p>
         </div>
       </div>

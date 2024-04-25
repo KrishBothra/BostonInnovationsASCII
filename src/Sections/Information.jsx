@@ -2,6 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import irving from "./Assets/bostonInnovationIrving.jpg"
+import doug from "./Assets/DougRett.jpeg"
 import Slider from "react-slick";
 
 const InfoCard = ({ title, description, imageUrl }) => {
@@ -47,11 +48,12 @@ function Information() {
 
   const images = [
     'https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/2492px-Texas_A%26M_University_logo.svg.png',
     'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Northeastern_seal.svg/1200px-Northeastern_seal.svg.png',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/2492px-Texas_A%26M_University_logo.svg.png',
     'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Boston_University_seal.svg/1200px-Boston_University_seal.svg.png',
-    'https://cdn.freebiesupply.com/images/large/2x/mit-logo-transparent.png',
     'https://seeklogo.com/images/T/tufts-university-logo-C22B1DB618-seeklogo.com.png',
+    'https://cdn.freebiesupply.com/images/large/2x/mit-logo-transparent.png',
+
     // Add more image URLs as needed
   ];
 
@@ -68,68 +70,66 @@ function Information() {
           Our Company Leadership:
         </h2>
         <div className="flex flex-wrap justify-center items-start gap-20">
-          
 
-          <div className="w-96 h-90 rounded-lg overflow-hidden shadow-lg mx-6 flex flex-col">
-            <div className="p-4 flex-1 flex flex-col">
-              <div>
-                <img
-                  className="w-full h-full object-cover rounded"
-                  src="https://media.licdn.com/dms/image/C4E03AQGSHfdlSPVP5Q/profile-displayphoto-shrink_800_800/0/1585400318784?e=2147483647&v=beta&t=f2gyP0_iXgmhoUM7uQsPYiBySbbU5vwGZTOrWUuy1Ew"
-                  alt="Card image"
-                />
+
+          <div className="flex flex-wrap justify-center">
+            <div className="w-96 rounded-lg overflow-hidden shadow-lg mx-6 flex flex-col">
+              <div className="p-4 flex-1 flex flex-col">
+                <div className="h-90">
+                  <img
+                    className="w-full h-full object-cover rounded"
+                    src="https://media.licdn.com/dms/image/C4E03AQGSHfdlSPVP5Q/profile-displayphoto-shrink_800_800/0/1585400318784?e=2147483647&v=beta&t=f2gyP0_iXgmhoUM7uQsPYiBySbbU5vwGZTOrWUuy1Ew"
+                    alt="Card image"
+                  />
+                </div>
+                <div>
+                  <p className="text-gray-500 text-base">Board of Advisors</p>
+                  <div className="font-bold text-xl mb-2">Dr. James Hillis</div>
+                  <p className="text-gray-700 text-base">Director of Neurological Clinical Operations</p>
+                  <p className="text-gray-700 text-base">Digital Clinical Research and Artificial Intelligence</p>
+                  <p className="text-gray-700 text-base mb-4">Organization at Mass General Brigham</p>
+                </div>
               </div>
-              <div>
-                <p className=" text-gray-500 text-base ">Board of Advisors</p>
-                <div className=" font-bold text-xl mb-2">Dr. James Hillis</div>
-                <p className="text-gray-700 text-base ">Director of Neurological Clinical Operations</p>
-                <p className="text-gray-700 text-base ">Digital Clinical Research and Artificial Intelligence</p>
-                <p className="text-gray-700 text-base mb-4">Organization at Mass General Brigham</p>
+            </div>
 
+            <div className="w-96 rounded-lg overflow-hidden shadow-lg mx-6 flex flex-col">
+              <div className="p-4 flex-1 flex flex-col">
+                <div className="h-90">
+                  <img
+                    className="w-full h-full object-cover rounded"
+                    src={irving}
+                    alt="Card image"
+                  />
+                </div>
+                <div className="h-20">
+                  <p className="text-gray-500 text-base">Founder & CEO</p>
+                  <div className="font-bold text-xl mb-2">Nicholas Irving</div>
+                  <p className="text-gray-700 text-base">McKinsey & Company Intern</p>
+                  <p className="text-gray-700 text-base mb-4">Harvard & MIT program alum</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-96 rounded-lg overflow-hidden shadow-lg mx-6 flex flex-col">
+              <div className="p-4 flex-1 flex flex-col">
+                <div className="h-50">
+                  <img
+                    className="w-full h-full object-cover rounded"
+                    src={doug}
+                    alt="Card image"
+                  />
+                </div>
+                <div className="h-40">
+                  <p className="text-gray-500 text-base">Board of Advisors</p>
+                  <div className="font-bold text-xl mb-2">Dr. Doug Rett</div>
+                  <p className="text-gray-700 text-base">Chief of Optometry</p>
+                  <p className="text-gray-700 text-base mb-4">Veteran Affairs New England Region</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="w-96 h-90 rounded-lg overflow-hidden shadow-lg mx-6 flex flex-col">
-            <div className="p-4 flex-1 flex flex-col">
-              <div>
-                <img
-                  className="w-full h-full object-cover rounded"
-                  src={irving}
-                  alt="Card image"
-                />
-              </div>
-              <div>
-                <p className=" text-gray-500 text-base ">Founder & CE0</p>
-                <div className=" font-bold text-xl mb-2">Nicholas Irving</div>
-                <p className="text-gray-700 text-base ">Mckinsey & Company Intern</p>
-                <p className="text-gray-700 text-base mb-4">Harvard & MIT program alum</p>
 
-              </div>
-            </div>
-          </div>
-
-          <div className="w-96 h-90 rounded-lg overflow-hidden shadow-lg mx-6 flex flex-col">
-            <div className="p-4 flex-1 flex flex-col">
-              <div>
-                <img
-                  className="w-full h-full object-cover rounded"
-                  src="https://abcmo.org/wp/wp-content/uploads/2021/04/Doug-Rett.jpg"
-                  alt="Card image"
-                />
-              </div>
-              <div>
-                <p className=" text-gray-500 text-base ">Board of Advisors</p>
-                <div className=" font-bold text-xl mb-2">Dr. Doug Rett</div>
-                <p className="text-gray-700 text-base ">Chief of Optometry</p>
-                <p className="text-gray-700 text-base mb-4">Veteran Affairs New England Region</p>
-
-
-              </div>
-            </div>
-          </div>
-
-         
 
 
         </div>
