@@ -14,66 +14,40 @@ function FAQ() {
           <div class="grid sm:grid-cols-2 gap-6 md:gap-12">
             <div>
               <h3 class="text-lg font-semibold text-black">
-                semper eget duis at
+                Can I invest money or partner my lab?
               </h3>
               <p class="mt-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Of course, please send all related inquiries to:
+                outreach@bostoninnovations.org
               </p>
             </div>
 
             <div>
               <h3 class="text-lg font-semibold text-black">
-                semper eget duis at
+                Interested in joining the team full time?
               </h3>
               <p class="mt-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Although we rarely offer full time positions, please send your resume along with your practical skillset to:
+                humanresources@bostoninnovations.org
               </p>
             </div>
 
-            <div>
-              <h3 class="text-lg font-semibold text-black">
-                semper eget duis at
-              </h3>
-              <p class="mt-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
+            
 
-            <div>
-              <h3 class="text-lg font-semibold text-black">
-                semper eget duis at
-              </h3>
-              <p class="mt-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
 
-            <div>
-              <h3 class="text-lg font-semibold text-gblack">
-                semper eget duis at
-              </h3>
-              <p class="mt-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-
-            <div>
-              <h3 class="text-lg font-semibold text-black">
-                semper eget duis at
-              </h3>
-              <p class="mt-2 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-center">
+              <h3 class=" text-lg font-semibold text-black">
+                Any extra questions?
+                <p class="">
+                Please reach out to:
+                info@bostoninnovations.org
+                </p>
+              </h3>
+              
+            </div>
     </div>
   );
 }
