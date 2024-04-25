@@ -32,22 +32,17 @@ function FAQ() {
               </p>
             </div>
 
-            
+
 
 
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
-              <h3 class=" text-lg font-semibold text-black">
-                Any extra questions?
-                <p class="">
-                Please reach out to:
-                info@bostoninnovations.org
-                </p>
-              </h3>
-              
-            </div>
+      <div class="flex flex-col items-center justify-center">
+        <h3 class="text-lg font-semibold text-black">Any extra questions?</h3>
+        <p class="mt-2 text-center">Please reach out to: info@bostoninnovations.org</p>
+      </div>
+
     </div>
   );
 }

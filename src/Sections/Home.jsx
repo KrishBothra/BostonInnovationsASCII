@@ -10,7 +10,7 @@ function Home() {
     <div>
       {/* <Carousel /> */}
       <Hero />
-      <Card />
+      {/* <Card /> */}
       <Vision />
       <FAQ />
       <Footer />

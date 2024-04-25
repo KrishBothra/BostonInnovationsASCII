@@ -5,7 +5,8 @@ function Card() {
     <div class="max-w-[85rem] mt-24 px-4 sm:px-6 lg:px-8 mx-auto py-8">
       <div class=" mx-auto text-center mb-10 lg:mb-14">
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-black">
-        Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation. Our journey began with a shared vision to revolutionize the future of healthcare using modern AI technology. Today, we are a leading force in the development of advanced medical devices, cutting-edge pharmaceuticals, and comprehensive artificial intelligence healthcare systems.        </h2>
+        Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation. Our journey began with a shared vision to revolutionize the future of healthcare using modern AI technology. Today, we are a leading force in the development of advanced medical devices, cutting-edge pharmaceuticals, and comprehensive artificial intelligence healthcare systems.       
+         </h2>
         
       </div>
 
