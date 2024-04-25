@@ -3,14 +3,10 @@ import React from "react";
 function Card() {
   return (
     <div class="max-w-[85rem] mt-24 px-4 sm:px-6 lg:px-8 mx-auto py-8">
-      <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <div class=" mx-auto text-center mb-10 lg:mb-14">
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-black">
-          What We Do
-        </h2>
-        <p class="mt-1 text-black">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        Founded by a group of ambitious Boston area engineering students and faculty, Boston Innovations Corporation stands at the forefront of biomedical technology and innovation. Our journey began with a shared vision to revolutionize the future of healthcare using modern AI technology. Today, we are a leading force in the development of advanced medical devices, cutting-edge pharmaceuticals, and comprehensive artificial intelligence healthcare systems.        </h2>
+        
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

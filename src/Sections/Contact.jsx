@@ -27,7 +27,7 @@ function Contact() {
       });
     
 
-    event.target.reset();
+    event.target.reset()
   }
 
   return (
