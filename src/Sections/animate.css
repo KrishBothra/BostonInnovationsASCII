@@ -1,0 +1,32 @@
+.animated-image {
+    animation: slideIn 1s forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .pulse {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(0.51);
+    }
+    100% {
+      transform: scale(0.5);
+    }
+  }
+  
+  
+  
+  

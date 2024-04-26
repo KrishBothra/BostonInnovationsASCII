@@ -1,11 +1,12 @@
 import heroImg1 from "./Assets/bostonInnovations.svg";
+import "./animate.css"
 
 function Hero() {
   return (
     <div className="h-[103vh] bg-black">
-      <div className="h-screen flex items-center justify-center">
+      <div className="h-screen flex items-center justify-center ">
         <img
-          className="transform scale-50"
+          className="transform scale-50 pulse "
           src={heroImg1}
           alt="Image Description"
         />
