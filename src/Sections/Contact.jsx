@@ -7,28 +7,37 @@ function Contact() {
 
  
   function sendEmail(event) {
-    console.log("heyyyyy")
-    event.preventDefault(); 
-    
-    const templateParams = {
-      first_name: event.target.elements['first-name'].value,
-      last_name: event.target.elements['last-name'].value,
-      user_company: event.target.elements['company'].value,
-      user_email: event.target.elements['email'].value,
-      user_number: event.target.elements['phone-number'].value,
-      message: event.target.elements['message'].value
-    };
-    
-    emailjs.send('service_uhaz7kl', 'template_91mauzt', templateParams, 'qO-2cdDv92CnS36bk')
-      .then((result) => {
-        console.log('Email sent successfully:', result.text);
-      }, (error) => {
-        console.error('Email sending failed:', error.text);
-      });
-    
+    event.preventDefault();
 
-    event.target.reset()
-  }
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput.files[0];
+    if (!file) {
+        console.error('No file selected.');
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(event) {
+        const fileUrl = event.target.result;
+        console.log('File URL:', fileUrl);
+
+        const templateParams = {
+            
+            pdf_url: fileUrl
+        };
+
+        emailjs.send('service_uhaz7kl', 'template_91mauzt', templateParams, 'qO-2cdDv92CnS36bk')
+            .then((result) => {
+                console.log('Email sent successfully:', result.text);
+            }, (error) => {
+                console.error('Email sending failed:', error.text);
+            });
+    };
+    reader.readAsDataURL(file);
+
+    event.target.reset();
+}
+
 
   return (
     <div class="bg-gray-200">
@@ -178,6 +187,18 @@ function Contact() {
               ></textarea>
             </div>
           </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+            >
+              Resume
+            </label>
+            <div class="mt-2.5">
+              <input type="file" id="fileInput" accept=".pdf"/>
+
+            </div>
+          </div>
           <div class="flex gap-x-4 sm:col-span-2">
             <div class="flex h-6 items-center">
               <button
@@ -314,5 +335,6 @@ function Contact() {
     </div>
   );
 }
+
 
 export default Contact;
