@@ -6,8 +6,8 @@ import emailjs from '@emailjs/browser';
 function Contact() {
 
  
-  function sendEmail(event) {
-    event.preventDefault();
+  function sendEmail(event1) {
+    event1.preventDefault();
 
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[0];
@@ -20,9 +20,15 @@ function Contact() {
     reader.onload = function(event) {
         const fileUrl = event.target.result;
         console.log('File URL:', fileUrl);
+        console.log('File URL:', fileUrl);
 
         const templateParams = {
-            
+            first_name: event1.target.elements['first-name'].value,
+            last_name: event1.target.elements['last-name'].value,
+            user_company: event1.target.elements['company'].value,
+            user_email: event1.target.elements['email'].value,
+            user_number: event1.target.elements['phone-number'].value,
+            message: event1.target.elements['message'].value,
             pdf_url: fileUrl
         };
 
@@ -35,7 +41,7 @@ function Contact() {
     };
     reader.readAsDataURL(file);
 
-    event.target.reset();
+    event1.target.reset();
 }
 
 
@@ -49,11 +55,9 @@ function Contact() {
 
       <div class="mx-auto max-w-2xl text-center mt-16">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Leave a Message
+        2024 Internship Application Form
         </h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">
-          You can also contact us at info@bostoninnovations.org
-        </p>
+        
       </div>
 
       
@@ -99,7 +103,7 @@ function Contact() {
               for="company"
               class="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Company
+              Please provide your LinkedIn profile below:
             </label>
             <div class="mt-2.5">
               <input
@@ -176,7 +180,7 @@ function Contact() {
               for="message"
               class="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Message
+              We are eager to learn more about your motivation for pursuing this internship with Boston Innovations. Please share your reasons for your interest in this role and elaborate on the specific skills that you will contribute to our corporate endeavors.
             </label>
             <div class="mt-2.5">
               <textarea
@@ -199,31 +203,7 @@ function Contact() {
 
             </div>
           </div>
-          <div class="flex gap-x-4 sm:col-span-2">
-            <div class="flex h-6 items-center">
-              <button
-                type="button"
-                class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                role="switch"
-                aria-checked="false"
-                aria-labelledby="switch-1-label"
-              >
-                <span class="sr-only">Agree to policies</span>
-                <span
-                  aria-hidden="true"
-                  class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
-                ></span>
-              </button>
-            </div>
-            <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-              By selecting this, you agree to our
-              <span> </span>
-              <a href="#" class="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </a>
-              .
-            </label>
-          </div>
+          
         </div>
         <div class="mt-10">
           <button
@@ -231,7 +211,7 @@ function Contact() {
             class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             {/* bg-indigo-600 */}
-            Let's talk
+            Submit
           </button>
         </div>
       </form>
