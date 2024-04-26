@@ -58,7 +58,7 @@ function Information() {
   ];
 
   return (
-    <div className="pt-10">
+    <div className="pt-10 bg-gray-200">
       <div className="mt-5 pt-10 max-w-xl text-center mx-auto">
         <h1 className="block font-bold text-black text-4xl md:text-5xl lg:text-6xl ">
           Information
@@ -160,8 +160,8 @@ function Information() {
 
 
 
-      <div id="new" className="h-auto">
-        <div class="overflow-hidden bg-white h-auto">
+      <div id="new" className="h-auto " class="bg-gray-200">
+        <div class="overflow-hidden  h-auto">
           <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
 

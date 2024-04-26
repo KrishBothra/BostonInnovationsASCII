@@ -3,7 +3,7 @@ import logo from "./Assets/bostonInnovations.png";
 function Footer() {
   return (
     <div>
-      <footer class="bg-white">
+      <footer class="bg-gray-200">
         <div class="w-full py-10 px-4 sm:pl-16 md:pl-36 lg:pl-56 lg:pt-20">
           <div class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 md:gap-36 gap-56">
             <div class="col-span-full lg:col-span-1">
