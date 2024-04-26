@@ -1,15 +1,25 @@
-import heroImg1 from "./Assets/bostonInnovations.svg";
+import logo from "./Assets/bostonLogoNav.svg";
+import logo1 from "./Assets/outline.svg";
 import "./animate.css"
 
 function Hero() {
   return (
     <div className="h-[103vh] bg-black">
-      <div className="h-screen flex items-center justify-center ">
-        <img
-          className="transform scale-50 pulse "
-          src={heroImg1}
-          alt="Image Description"
-        />
+      <div className="h-screen flex items-center justify-center  ">
+      <img
+            className="transform scale-50 pulse absolute "
+            src={logo}
+            alt="Image Description"
+          />
+          <img
+            className="transform scale-50 pulse absolute "
+            src={logo1}
+            alt="Image Description"
+            style={{ zIndex: 1 }}
+          />
+        
+
+
 
 
 

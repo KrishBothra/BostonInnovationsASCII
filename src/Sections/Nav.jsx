@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./Assets/bostonInnovations.png";
+import logo from "./Assets/bostonLogoNav.svg";
 import logo1 from "./Assets/outline.svg";
 
 function Nav() {
@@ -9,7 +9,7 @@ function Nav() {
         <a href="/" class="flex items-center">
           <div class="image-container">
             <img src={logo} class="h-12 mr-3 rotate-image" alt="Flowbite Logo"></img>
-            <img src={logo1} class="h-12 mr-3  duplicate" alt="Flowbite Logo"></img>
+            <img src={logo1} class="h-12 mr-3 duplicate " alt="Flowbite Logo"></img>
           </div>
 
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
