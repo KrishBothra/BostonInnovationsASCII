@@ -9,9 +9,11 @@
     100% {
       transform: translateY(0);
     }
+
+    
   }
   
-  .pulse {
+  .pulse:hover {
     animation: pulse 1s infinite;
   }
   
@@ -23,9 +25,24 @@
       transform: scale(0.51);
     }
     100% {
-      transform: scale(0.5);
+      transform: scale  (0.5);
     }
   }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-image:hover {
+    animation: rotate 2s linear infinite;
+}
+
+  
   
   
   
