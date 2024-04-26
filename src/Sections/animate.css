@@ -39,11 +39,21 @@
   }
   
   .rotate-image:hover {
-    animation: rotate 2s linear infinite;
+    animation: rotate 1s linear infinite;
 }
 
   
   
-  
+.duplicate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
   
   

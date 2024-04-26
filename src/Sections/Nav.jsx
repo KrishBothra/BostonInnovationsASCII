@@ -1,11 +1,17 @@
 import React from "react";
 import logo from "./Assets/bostonInnovations.png";
+import logo1 from "./Assets/outline.svg";
+
 function Nav() {
   return (
     <nav class=" bg-black fixed w-full z-20 top-0 left-0">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" class="flex items-center">
-          <img src={logo} class="h-12 mr-3 rotate-image" alt="Flowbite Logo"></img>
+          <div class="image-container">
+            <img src={logo} class="h-12 mr-3 rotate-image" alt="Flowbite Logo"></img>
+            <img src={logo1} class="h-12 mr-3  duplicate" alt="Flowbite Logo"></img>
+          </div>
+
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Boston Innovations
           </span>
