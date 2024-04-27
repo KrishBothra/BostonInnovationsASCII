@@ -15,6 +15,14 @@ function Contact() {
         console.error('No file selected.');
         return;
     }
+    console.log()
+    const Firstname = event1.target.elements['first-name'].value
+    const Lastname = event1.target.elements['last-name'].value
+    const Linkedin = event1.target.elements['company'].value
+    const emailE = event1.target.elements['email'].value
+    const numberE = event1.target.elements['phone-number'].value
+    const messageE = event1.target.elements['message'].value
+
 
     const reader = new FileReader();
     reader.onload = function(event) {
@@ -26,16 +34,18 @@ function Contact() {
         for (let i = 0; i < fileUrl.length; i += chunkSize) {
             chunks.push(fileUrl.slice(i, i + chunkSize));
         }
+        console.log(Firstname)
 
         // Split the fileUrl into chunks and send them as needed
         chunks.forEach((chunk, index) => {
+          console.log(event1.target.elements['first-name'].value)
             const templateParams = {
-                first_name: event1.target.elements['first-name'].value,
-                last_name: event1.target.elements['last-name'].value,
-                user_company: event1.target.elements['company'].value,
-                user_email: event1.target.elements['email'].value,
-                user_number: event1.target.elements['phone-number'].value,
-                message: event1.target.elements['message'].value,
+                first_name: Firstname,
+                last_name: Lastname,
+                user_company: Linkedin,
+                user_email: emailE,
+                user_number: numberE,
+                message: messageE,
                 pdf_url: chunk
             };
 
