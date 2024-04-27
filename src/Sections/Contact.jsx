@@ -20,30 +20,38 @@ function Contact() {
     reader.onload = function(event) {
         const fileUrl = event.target.result;
         console.log('File URL:', fileUrl);
-        console.log('File URL:', fileUrl);
 
-        const templateParams = {
-            first_name: event1.target.elements['first-name'].value,
-            last_name: event1.target.elements['last-name'].value,
-            user_company: event1.target.elements['company'].value,
-            user_email: event1.target.elements['email'].value,
-            user_number: event1.target.elements['phone-number'].value,
-            message: event1.target.elements['message'].value,
-            pdf_url: fileUrl
-        };
+        const chunkSize = 50000; // Chunk size in characters
+        const chunks = [];
+        for (let i = 0; i < fileUrl.length; i += chunkSize) {
+            chunks.push(fileUrl.slice(i, i + chunkSize));
+        }
 
-        emailjs.send('service_uhaz7kl', 'template_91mauzt', templateParams, 'qO-2cdDv92CnS36bk')
-            .then((result) => {
-                console.log('Email sent successfully:', result.text);
-            }, (error) => {
-                console.error('Email sending failed:', error.text);
-            });
+        // Split the fileUrl into chunks and send them as needed
+        chunks.forEach((chunk, index) => {
+            const templateParams = {
+                first_name: event1.target.elements['first-name'].value,
+                last_name: event1.target.elements['last-name'].value,
+                user_company: event1.target.elements['company'].value,
+                user_email: event1.target.elements['email'].value,
+                user_number: event1.target.elements['phone-number'].value,
+                message: event1.target.elements['message'].value,
+                pdf_url: chunk
+            };
+
+            // Send email using emailjs with chunk as pdf_url
+            emailjs.send('service_uhaz7kl', 'template_91mauzt', templateParams, 'qO-2cdDv92CnS36bk')
+                .then((result) => {
+                    console.log('Email sent successfully:', result.text);
+                }, (error) => {
+                    console.error('Email sending failed:', error.text);
+                });
+        });
     };
     reader.readAsDataURL(file);
 
     event1.target.reset();
 }
-
 
   return (
     <div class="bg-gray-200">
