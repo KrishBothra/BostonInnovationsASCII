@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.page-centered {
+    @apply max-w-[85rem] mx-auto px-8;
+}
