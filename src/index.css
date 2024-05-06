@@ -4,5 +4,5 @@
 
 
 .page-centered {
-    @apply max-w-[85rem] mx-auto px-8;
+    @apply max-w-[93rem] mx-auto px-8;
 }
