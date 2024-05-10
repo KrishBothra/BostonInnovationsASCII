@@ -15,6 +15,8 @@ export default function Home() {
       <br />
       <br />
 
+      <h1 className="page-centered text-2xl font-bold mb-1">About Us</h1>
+
       <p className="page-centered text-xl">
         {/* At Boston Innovations, we're driven by the pursuit of excellence and the desire to fulfill the unmet needs of the healthcare industry. Our team consists of world-class engineers, scientists, and healthcare professionals who collaborate to push the boundaries of what's possible. From AI-driven diagnostics to advanced medical device development, our expertise is shaping the next wave of medical advancements. */}
         Founded by a group of ambitious Boston area engineering students and
