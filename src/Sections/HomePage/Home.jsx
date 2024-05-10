@@ -86,7 +86,6 @@ export default function Home() {
       <br />
       <br />
 
-      <p className="mt-96"> </p>
 
       <Footer />
 
