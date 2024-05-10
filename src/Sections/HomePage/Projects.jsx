@@ -4,7 +4,7 @@ export default function Projects() {
       <h2 className="mt-10 mb-3 text-2xl text-center font-bold">
         Our Projects and Services
       </h2>
-      <div className="mx-auto px-8 max-w-[60rem] text-xl flex-col">
+      <div className="mx-auto px-8 max-w-[50rem]  flex-col">
         {[
           { text: "Artificial Intelligence Development", linkId: "ai" },
           { text: "Medical Technology Development", linkId: "medtech" },
@@ -16,7 +16,9 @@ export default function Projects() {
             target="_blank"
             className={
               `block w-fit ${index % 2 == 1 ? "ml-auto" : "mr-auto"} ` +
-              "hover:underline px-4 py-3 my-5 text-3xl rounded-lg bg-gray-100"
+              " px-4 py-3 my-5 text-2xl rounded-lg  bg-gray-100 " +
+              "hover:underline hover:bg-gray-200"
+              
             }
           >
             {item.text}
@@ -41,7 +43,7 @@ function ExternalLinkIcon({ className = "" }) {
     /></svg> */}
 
       <svg
-        className={`${className} inline h-8 align-text-bottom	`}
+        className={`${className} inline h-7 align-text-bottom	`}
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
         height="1em"
