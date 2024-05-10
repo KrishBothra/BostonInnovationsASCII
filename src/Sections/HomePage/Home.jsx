@@ -5,6 +5,7 @@ import Header from "../Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Universities from "./Universities";
+import Footer from "../Footer";
 
 export default function Home() {
   return (
@@ -86,6 +87,8 @@ export default function Home() {
       <br />
 
       <p className="mt-96"> </p>
+
+      <Footer />
 
     </div>
   );
