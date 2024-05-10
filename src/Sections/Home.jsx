@@ -4,6 +4,8 @@ import React from "react";
 import Header from "./Header";
 import "./Home.css";
 import Hero from "./Hero";
+import FAQ from "./old/FAQ";
+import Projects from "./old/Projects";
 
 export default function Home() {
   return (
@@ -12,6 +14,18 @@ export default function Home() {
       <Header />
 
       <Hero />
+
+    
+      <br />
+      <br />
+
+      <p className="max-w-[75rem] mx-auto px-8 text-xl">
+        {/* At Boston Innovations, we leverage cutting-edge technologies to bridge the gap between innovative medical concepts and practical, life-saving solutions.  */}
+        At Boston Innovations, we're driven by the pursuit of excellence and the desire to fulfill the unmet needs of the healthcare industry. Our team consists of world-class engineers, scientists, and healthcare professionals who collaborate to push the boundaries of what's possible. From AI-driven diagnostics to advanced medical device development, our expertise is shaping the next wave of medical advancements.
+      </p>
+      
+      <br />
+      <br />
       
       {/* <h1>Home</h1> */}
 

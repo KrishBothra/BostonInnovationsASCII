@@ -4,5 +4,6 @@
 
 
 .page-centered {
+    /* Currently not used */
     @apply max-w-[93rem] mx-auto px-8;
 }
