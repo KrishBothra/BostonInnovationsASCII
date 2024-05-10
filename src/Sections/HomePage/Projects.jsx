@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <>
-      <h2 className="mt-10 mb-3 text-2xl text-center font-medium">
+      <h2 className="mt-10 mb-3 text-3xl text-center font-normal">
         Our Projects and Services
       </h2>
       <div className="mx-auto px-8 max-w-[50rem]  flex-col">

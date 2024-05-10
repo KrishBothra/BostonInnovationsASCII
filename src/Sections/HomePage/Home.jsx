@@ -16,7 +16,7 @@ export default function Home() {
       <br />
       <br />
 
-      <h1 className="page-centered text-2xl font-medium mb-1">About Us</h1>
+      <h1 className="page-centered subheading-style mb-2">About Us</h1>
 
       <p className="page-centered text-xl">
         {/* At Boston Innovations, we're driven by the pursuit of excellence and the desire to fulfill the unmet needs of the healthcare industry. Our team consists of world-class engineers, scientists, and healthcare professionals who collaborate to push the boundaries of what's possible. From AI-driven diagnostics to advanced medical device development, our expertise is shaping the next wave of medical advancements. */}
@@ -28,12 +28,14 @@ export default function Home() {
         medical devices, cutting-edge pharmaceuticals, and comprehensive
         artificial intelligence healthcare systems.
       </p>
+      <br />
 
       <Projects />
 
+      
 
-      <h2 className="mt-10 mb-1 page-centered text-2xl font-medium">Internships & Careers</h2>
-      <div className="page-centered">
+      <h2 className="mt-16 mb-1 page-centered subheading-style">Internships & Careers</h2>
+      <div className="mb-20 page-centered">
         <p className=" text-xl">
           We are currently hiring interns for the summer season in a variety of deparments!
         </p>
@@ -46,12 +48,35 @@ export default function Home() {
           /></svg>
         </a>
       </div>
-      
-
 
       <Universities />
 
-
+      <h2 className="mt-16 page-centered subheading-style" id="contact">
+        Connect with us
+      </h2>
+      {/* TODO: replace with social media themed buttons with their logo */}
+      <div className="mb-20 page-centered">
+        <a className="text-xl block" href="https://www.linkedin.com/company/boston-innovations/">LinkedIn</a>
+        <a className="text-xl block" href="https://discord.gg/t8xg36dMAV">Discord</a>
+        <details>
+          <summary className="text-xl">Email</summary>
+          <div className="pl-10">
+            <p className="text-xl">
+              General Questions: 
+              <a className="ml-1 text-xl underline" href="mailto:info@bostoninnovations.org">info@bostoninnovations.org</a>
+            </p>
+            <p className="text-xl">
+              Partner with Us:
+              <a className="ml-1 text-xl underline" href="mailto:outreach@bostoninnovations.org">outreach@bostoninnovations.org</a>
+            </p>
+            <p className="text-xl">
+              Carreer Related:
+              <a className="ml-1 text-xl underline" href="mailto:humanresources@bostoninnovations.org">humanresources@bostoninnovations.org</a>
+            </p>
+          </div>
+          
+        </details>
+      </div>
 
 
 

@@ -53,7 +53,9 @@ export default function Hero() {
                         Innovating at the forefront of Biomedical Technology and Artificial Intelligence.
                     </p>
 
-                    <button className="bg-white text-zinc-800 hover:bg-zinc-800 hover:text-white transition-colors font-bold py-4 px-6 rounded-lg rounded-bl-none mt-12">
+                    <button className="bg-white text-zinc-800 hover:bg-zinc-800 hover:text-white transition-colors font-bold py-4 px-6 rounded-lg rounded-bl-none mt-12"
+                        onClick={() => window.location.href = "/#contact"}
+                    >
                         Enquire Today
                     </button>
                 </div>

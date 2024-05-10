@@ -6,3 +6,8 @@
 .page-centered {
     @apply max-w-[75rem] mx-auto px-8;
 }
+
+.subheading-style {
+    @apply text-3xl font-light mb-3;
+    /* @apply text-2xl font-medium mb-1; */
+}

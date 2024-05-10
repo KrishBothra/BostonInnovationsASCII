@@ -8,7 +8,7 @@ import texasAm from "../Assets/universities/texas_am_aggies_logo_primary_2021_sp
 export default function Universities() {
   return (
     <>
-      <h2 className="mt-10 mb-1 page-centered text-2xl font-medium text-center">
+      <h2 className="mt-10 mb-1 page-centered subheading-style text-center">
         Partnered with Student Researchers From Schools Such As{" "}
       </h2>
       <div className="mt-5 max-w-[85rem] mx-auto px-8 flex flex-row items-center gap-5 overflow-x-scroll" style={{ scrollbarWidth: "none" }}>
