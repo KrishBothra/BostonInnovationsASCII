@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import vid from "./Assets/medical-stock-video.mp4";
+import vid from "../Assets/medical-stock-video.mp4";
 
 export default function Hero() {
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Route, Routes} from "react-router-dom"
 
 
-import Home from "./Sections/Home";
+import Home from "./Sections/HomePage/Home";
 
 
 function App() {
