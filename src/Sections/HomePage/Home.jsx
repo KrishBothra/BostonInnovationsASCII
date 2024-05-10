@@ -1,6 +1,6 @@
 //@ts-check
 
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
@@ -8,6 +8,9 @@ import Universities from "./Universities";
 import Footer from "../Footer";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Boston Innovations | Home";
+  }, []);
   return (
     <div>
       <Header />
@@ -79,6 +82,7 @@ export default function Home() {
         </details>
       </div>
 
+      {/* TODO our offices ascii map */}
 
 
 
